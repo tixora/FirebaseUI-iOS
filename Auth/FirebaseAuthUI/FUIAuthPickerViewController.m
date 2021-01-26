@@ -120,7 +120,7 @@ static const CGFloat kTOSViewHorizontalMargin = 16.0f;
   NSInteger numberOfButtons = self.authUI.providers.count;
 
   CGFloat buttonContainerViewHeight =
-      kSignInButtonHeight * numberOfButtons + kSignInButtonVerticalMargin * (numberOfButtons);
+      kSignInButtonHeight * numberOfButtons + kSignInButtonVerticalMargin * (numberOfButtons - 1);
   CGRect buttonContainerViewFrame = CGRectMake(0, 0, kSignInButtonWidth, buttonContainerViewHeight);
   _buttonContainerView = [[UIView alloc] initWithFrame:buttonContainerViewFrame];
   if (_scrollView) {
